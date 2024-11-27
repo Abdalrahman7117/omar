@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="project1ModelStoreContainer" CdmEntityContainer="project1Entities">
+    <EntitySetMapping Name="login1">
+      <EntityTypeMapping TypeName="project1Model.login1">
+        <MappingFragment StoreEntitySet="login1">
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="log_name" ColumnName="log_name" />
+          <ScalarProperty Name="log_pass" ColumnName="log_pass" />
+          <ScalarProperty Name="log_role" ColumnName="log_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="project1Model.task">
+        <MappingFragment StoreEntitySet="task">
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="task_name" ColumnName="task_name" />
+          <ScalarProperty Name="task_title" ColumnName="task_title" />
+          <ScalarProperty Name="task_des" ColumnName="task_des" />
+          <ScalarProperty Name="task_Status" ColumnName="task_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

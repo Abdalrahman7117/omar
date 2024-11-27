@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="project1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="login1">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="int" Nullable="false" />
+    <Property Name="log_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="log_pass" Type="nvarchar" MaxLength="50" />
+    <Property Name="log_role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="task">
+    <Key>
+      <PropertyRef Name="task_id" />
+    </Key>
+    <Property Name="task_id" Type="int" Nullable="false" />
+    <Property Name="task_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="task_title" Type="nvarchar" MaxLength="50" />
+    <Property Name="task_des" Type="nvarchar" MaxLength="50" />
+    <Property Name="task_Status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="project1ModelStoreContainer">
+    <EntitySet Name="login1" EntityType="Self.login1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="task" EntityType="Self.task" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
